@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Spitter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <main class="main">
+            <h1 class="title">Emojier</h1>
+            <p class="sub-title">Your emojs summarize about who you are</p>
+            <div class="emojis">
+                <input type="text" id="emoji-input" placeholder="Type in some emoji...">
+                <div class="buttons">
+                    <div>
+                        <button id="push-btn">Add to End</button>
+                        <button id="shift-btn">Delete at Start</button>
+                    </div>
+                    <div>
+                        <button id="unshift-btn">Add to Start</button>
+                        <button id="pop-btn">Delete at End</button>
+                    </div>
+                </div>
+                <div id="emojiContainer">
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

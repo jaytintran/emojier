@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: hsla(33, 100%, 53%, 1);
+    --secondary-color: hsla(58, 100%, 68%, 1);
+    --title-color: #264653;
+    --text-color: #2a9d8f;
+    --input-bg: #68e2d4;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+}
+
+input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    text-align: center;
+    font-size: 2rem;
+    width: 500px;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #60efff;
+    border-radius: 15px;
+}
+
+.title {
+    color: var(--title-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.emojis {
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.emojis input {
+    border: none;
+    background-color: var(--input-bg);
+    padding: .75rem 1.25rem;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.emojis input:focus {
+    outline: none;
+    border: none;
+}
+
+#emojiContainer {
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.buttons div {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.buttons button {
+    width: 130px;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem .5rem;
+    background-color: var(--secondary-color);
+}
+
+.emojis button:hover {
+    background-color: var(--main-color);
+}
